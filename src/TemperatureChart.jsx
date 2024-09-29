@@ -74,12 +74,12 @@ const TemperatureChart = ({ city }) => {
             const weatherResponse = await fetch(
                 `https://meteostat.p.rapidapi.com/point/daily?lat=${lat}&lon=${lon}&alt=184&start=${startDate}&end=${endDate}`,
                 {
-                    method: 'GET',
+                    method: 'GET', 
                     headers: {
                         'X-RapidAPI-Key': process.env.REACT_APP_RAPIDAPI_KEY,
                         'X-RapidAPI-Host': 'meteostat.p.rapidapi.com',
                     },
-                }
+                } 
             );
 
             const weatherData = await weatherResponse.json();
