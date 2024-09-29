@@ -76,7 +76,7 @@ const TemperatureChart = ({ city }) => {
                 {
                     method: 'GET', 
                     headers: {
-                        'X-RapidAPI-Key': process.env.REACT_APP_RAPIDAPI_KEY,
+                        'X-RapidAPI-Key':'d87c579602msh2cab938984e122cp1bcb97jsn8fefaa347da0',
                         'X-RapidAPI-Host': 'meteostat.p.rapidapi.com',
                     },
                 } 
@@ -110,7 +110,7 @@ const TemperatureChart = ({ city }) => {
         try {
             if (city) {
                 const geoResponse = await fetch(
-                    `https://api.geoapify.com/v1/geocode/search?text=${city}&apiKey=${process.env.REACT_APP_GEOAPIFY_API_KEY}`
+                    `https://api.geoapify.com/v1/geocode/search?text=${city}&apiKey=49307aec154f434db7bbbd73e609f526`
                 );
                 const geoData = await geoResponse.json();
                 const [lon, lat] = geoData.features[0].geometry.coordinates;
