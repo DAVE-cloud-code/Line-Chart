@@ -93,7 +93,7 @@ const TemperatureChart = ({ city }) => {
 
             // Store data in localStorage
             localStorage.setItem(
-                `tavg_${lat}_${lon}_${days}`,
+                `temperature_${lat}_${lon}_${days}`,
                 JSON.stringify({ labels: daysList, temperatureData: temps })
             );
 
