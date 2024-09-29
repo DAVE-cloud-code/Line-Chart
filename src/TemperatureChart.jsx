@@ -72,7 +72,7 @@ const TemperatureChart = ({ city }) => {
             }
 
             const weatherResponse = await fetch(
-                `https://meteostat.p.rapidapi.com/point/daily?lat=${lat}&lon=${lon}&alt=184&start=${startDate}&end=${endDate}`,
+                `https://meteostat.p.rapidapi.com/point/daily?lat=43.6667&lon=-79.4&alt=184&start=2024-08-01&end=2025-05-01`,
                 {
                     method: 'GET', 
                     headers: {
