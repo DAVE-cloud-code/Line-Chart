@@ -76,7 +76,7 @@ const TemperatureChart = ({ city }) => {
                 {
                     method: 'GET', 
                     headers: {
-                        'X-RapidAPI-Key':'d87c579602msh2cab938984e122cp1bcb97jsn8fefaa347da0',
+                        'X-RapidAPI-Key':'a3b5927ab6msha3a401cf77525e5p1aad6djsn0adf0a8a5054',
                         'X-RapidAPI-Host': 'meteostat.p.rapidapi.com',
                     },
                 } 
