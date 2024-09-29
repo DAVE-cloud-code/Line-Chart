@@ -83,7 +83,7 @@ const TemperatureChart = ({ city }) => {
             );
 
             const weatherData = await weatherResponse.json();
-            const dailyData = weatherData.data.tavg;
+            const dailyData = weatherData.data
 
             const temps = dailyData.map((day) => day.tavg);
             const daysList = dailyData.map((day) => day.date);
