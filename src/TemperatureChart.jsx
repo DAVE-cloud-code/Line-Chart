@@ -34,7 +34,7 @@ const TemperatureChart = () => {
     useEffect(() => {
         const today = new Date();
         const thirtyDaysAgo = new Date();
-        thirtyDaysAgo.setDate(today.getDate() - 30);
+        thirtyDaysAgo.setDate(today.getDate() - 7);
 
         setStartDate(thirtyDaysAgo.toISOString().split('T')[0]);
         setEndDate(today.toISOString().split('T')[0]);
@@ -121,7 +121,7 @@ const TemperatureChart = () => {
             labels: labels,
             datasets: [
                 {
-                    label: `Temperature in ${city} (${startDate} to ${endDate})`,
+                    label: `Temperature in ${city}`,
                     data: temperatureData,
                     borderColor: 'rgba(75, 192, 192, 1)',
                     backgroundColor: 'rgba(75, 192, 192, 0.2)',
